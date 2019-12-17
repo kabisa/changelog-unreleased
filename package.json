@@ -1,0 +1,28 @@
+{
+  "name": "changelog-unreleased",
+  "version": "1.0.0",
+  "author": "Rik Tonnard <rik@kabisa.nl>",
+  "private": true,
+  "bin": {
+    "prepare-changelog-release": "bin/prepare-changelog-release.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "changelog-unreleased": {
+    "changelogPath": "CHANGELOG.md",
+    "changelogUnreleasedPath": "CHANGELOG-UNRELEASED.md",
+    "changelogTemplatePath": "CHANGELOG-TEMPLATE.md",
+    "releaseRegExp": "^##"
+  },
+  "dependencies": {
+    "prettier": "^1.19.1",
+    "remark-parse": "^7.0.2",
+    "remark-stringify": "^7.0.4",
+    "unified": "^8.4.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
